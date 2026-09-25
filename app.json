@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "DayFlow",
+    "slug": "DayFlow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/dayflow-icon.jpg",
+    "scheme": "dayflow",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#292147",
+        "foregroundImage": "./assets/images/dayflow-icon.jpg"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#292147",
+          "image": "./assets/images/dayflow-icon.jpg",
+          "imageWidth": 200
+        }
+      ],
+      "expo-sqlite",
+      "@react-native-community/datetimepicker",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
